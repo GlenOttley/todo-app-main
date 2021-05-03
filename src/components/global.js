@@ -46,8 +46,5 @@ export const GlobalStyles = createGlobalStyle`
 	.to-do-filter__items {
 		color: ${({ theme }) => theme.toDoFilterItems__color};
 	}
-	.to-do-filter__items:hover {
-		color: ${({ theme }) => theme.toDoFilterItemsHover__color};
-	}
 
 	`

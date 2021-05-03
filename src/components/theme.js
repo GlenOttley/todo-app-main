@@ -20,5 +20,4 @@ export const darkTheme = {
 
 	toDoFilter__background: 'var(--very-dark-desaturated-blue)',
 	toDoFilterItems__color: 'var(--very-dark-grayish-blue--dark-1)',
-	toDoFilterItemsHover__color: 'red',
 }
