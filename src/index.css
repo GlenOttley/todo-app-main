@@ -1,62 +1,64 @@
 :root {
-	/*Colors*/
+  /*Colors*/
 
-	/*Primary*/
-	--bright-blue: hsl(220, 98%, 61%);
-	--check-background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  /*Primary*/
+  --bright-blue: hsl(220, 98%, 61%);
+  --check-background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
 
-	/*Neutral*/
-	/*Light Theme*/
-	--very-light-gray: hsl(0, 0%, 98%);
-	--very-light-grayish-blue: hsl(236, 33%, 92%);
-	--light-grayish-blue--light: hsl(233, 11%, 84%);
-	--dark-grayish-blue--light: hsl(236, 9%, 61%);
-	--very-dark-grayish-blue--light: hsl(235, 19%, 35%);
+  /*Neutral*/
+  /*Light Theme*/
+  --very-light-gray: hsl(0, 0%, 98%);
+  --very-light-grayish-blue: hsl(236, 33%, 92%);
+  --light-grayish-blue--light: hsl(233, 11%, 84%);
+  --dark-grayish-blue--light: hsl(236, 9%, 61%);
+  --very-dark-grayish-blue--light: hsl(235, 19%, 35%);
 
-	/*Dark Theme*/
-	--very-dark-blue: hsl(235, 21%, 11%);
-	--very-dark-desaturated-blue: hsl(235, 24%, 19%);
-	--light-grayish-blue--dark: hsl(234, 39%, 85%);
-	--light-grayish-blue--hover: hsl(236, 33%, 92%);
-	--dark-grayish-blue--dark: hsl(234, 11%, 52%);
-	--very-dark-grayish-blue--dark-1: hsl(233, 14%, 35%);
-	--very-dark-grayish-blue--dark-2: hsl(237, 14%, 26%);
+  /*Dark Theme*/
+  --very-dark-blue: hsl(235, 21%, 11%);
+  --very-dark-desaturated-blue: hsl(235, 24%, 19%);
+  --light-grayish-blue--dark: hsl(234, 39%, 85%);
+  --light-grayish-blue--hover: hsl(236, 33%, 92%);
+  --dark-grayish-blue--dark: hsl(234, 11%, 52%);
+  --very-dark-grayish-blue--dark-1: hsl(233, 14%, 35%);
+  --very-dark-grayish-blue--dark-2: hsl(237, 14%, 26%);
 
-	/*Typography*/
+  /*Typography*/
 
-	/*Body Copy*/
-	font-size: 18px;
+  /*Body Copy*/
+  font-size: 18px;
 
-	/*Font*/
-	font-family: 'Josefin Sans', sans-serif;
+  /*Font*/
+  font-family: 'Josefin Sans', sans-serif;
 }
 
-*, *::before, *::after {
-	box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
-	margin: 0;
-	background-color: var(--very-light-gray)
+  margin: 0;
+  background-color: var(--very-light-gray);
 }
 
 img {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 p {
-	margin: 0;
+  margin: 0;
 }
 
 .container {
-	width: 85%;
-	max-width: 500px;
-	margin: 0 auto;
+  width: 85%;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .flex {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 /*****
@@ -64,46 +66,32 @@ HEADER
 *****/
 
 .header {
-	display: flex;
-	justify-content: center;
-}
-
-.header__img--mobile {
-	position: relative;
-}
-
-.header__img--desktop {
-	position: relative;
-	display: none;
-}
-
-@media (min-width: 376px) {
-	.header__img--mobile {
-		display: none;
-	}
-
-	.header__img--desktop {
-		display: inline;
-	}
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
 }
 
 .header__message {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	position: absolute;
-	top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 30px;
 }
 
 .header__text {
-	color: white;
-	font-size: 1.5rem;
-	font-weight: 500;
-	letter-spacing: .55rem;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.55rem;
 }
 
 .header__toggle {
-	height: 20px;
+  height: 20px;
+  cursor: pointer;
 }
 
 /********
@@ -111,21 +99,21 @@ ENTRY BOX
 ********/
 
 .entry-box {
-	position: absolute;
-	top: 110px;
-	left: 0;
-	right: 0;
+  position: absolute;
+  top: 110px;
+  left: 0;
+  right: 0;
 }
 
 .entry-box__input {
-	border: none;
-	border-radius: 5px;
-	color: var(--very-dark-grayish-blue--light);
-	padding: 1rem;
-	width: 100%;
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: .65rem;
-	outline: none;
+  border: none;
+  border-radius: 5px;
+  color: var(--very-dark-grayish-blue--light);
+  padding: 1rem;
+  width: 100%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 0.65rem;
+  outline: none;
 }
 
 /*********
@@ -133,50 +121,50 @@ TO DO ITEM
 *********/
 
 .to-dos {
-	position: absolute;
-	top : 175px;
-	left: 0;
-	right: 0;
-	background-color: white;
-	border-radius: 5px;
+  position: absolute;
+  top: 175px;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-radius: 5px;
 }
 
 .checkbox {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border: 1px solid var(--very-light-grayish-blue);
-	border-radius: 100px;
-	height: 20px;
-	width: 20px;
-	margin-right: 1em;
-	cursor: pointer;
-	background-repeat: no-repeat;
-	background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--very-light-grayish-blue);
+  border-radius: 100px;
+  height: 20px;
+  width: 20px;
+  margin-right: 1em;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .to-do-item {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	border-bottom: 1px solid var(--very-light-grayish-blue);
-	color: var(--very-dark-grayish-blue--light);
-	font-size: .65rem;
-	padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--very-light-grayish-blue);
+  color: var(--very-dark-grayish-blue--light);
+  font-size: 0.65rem;
+  padding: 1rem;
 }
 
 .to-do-item__description {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .to-do-item__description--complete {
-	color: var(--light-grayish-blue--light);
-	text-decoration: line-through;
+  color: var(--light-grayish-blue--light);
+  text-decoration: line-through;
 }
 
 .to-do-item__cross {
-	height: 12px;
-	cursor: pointer;
+  height: 12px;
+  cursor: pointer;
 }
 
 /************
@@ -184,20 +172,20 @@ TO DO COUNTER
 ************/
 
 .to-do-counter {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	color: var(--dark-grayish-blue--light);
-	font-size: .65rem;
-	padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--dark-grayish-blue--light);
+  font-size: 0.65rem;
+  padding: 1rem;
 }
 
 .clear-completed {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .clear-completed:hover {
-	color: var(--very-dark-grayish-blue--light);
+  color: var(--very-dark-grayish-blue--light);
 }
 
 /***********
@@ -205,34 +193,33 @@ TO DO FILTER
 ***********/
 
 .to-do-filter {
-	position: absolute;
-	top : 580px;
-	left: 0;
-	right: 0;
-	background-color: white;
-	padding: .9rem;
-	border-radius: 5px;
+  position: absolute;
+  top: 580px;
+  left: 0;
+  right: 0;
+  background-color: white;
+  padding: 0.9rem;
+  border-radius: 5px;
 }
 
 .to-do-filter__items {
-	display: flex;
-	justify-content: space-between;
-	font-size: .8rem;
-	color: var(--dark-grayish-blue--light);
-	width: 65%;
-	margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--dark-grayish-blue--light);
+  width: 65%;
+  margin: 0 auto;
 }
 
 .to-do-filter__items p {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .to-do-filter__items p:hover {
-	cursor: pointer;
-	color: var(--very-dark-grayish-blue--light);
+  cursor: pointer;
+  color: var(--very-dark-grayish-blue--light);
 }
 
 .to-do-filter__items--clicked {
-	color: var(--bright-blue);
+  color: var(--bright-blue);
 }
-
